@@ -32,10 +32,10 @@ def search_and_send(query, api_url):
 
         # 各論文ごとに分ける
         entries = parse(data, "entry")
+        
+        entries = random.sample(entries, k=num_papers)
 
-        for i in random.sample(range(1000), k=num_papers):
-
-          entry = entries[i]
+        for entry in entries:
 
           # Parse each entry
           url = parse(entry, "id")[0]
