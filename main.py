@@ -6,11 +6,11 @@ import random
 QUERY = "ti:%22 Anomaly Detection %22 + OR + ti:%22 Machine Learning %22 + OR + ti:%22 Deep Learning %22"
 
 # 翻訳のためのAPI KEY（DeepL翻訳版）
-DeepL_API_KEY = '9b00a65e-2c76-935d-2e06-f1dcb2eef3ab:fx'
+DeepL_API_KEY = '[your DeepL API KEY]'
 
 # IFTTTを用いてarXivとLINEを繋ぐ
 # webhook POST先URL
-API_URL = "https://maker.ifttt.com/trigger/Arxiv2Line/with/key/dA8MFn-L3SihTEa0GUeL9E"
+API_URL = "[your webhook URL]"
 
 #欲しい論文数
 num_papers = 5
